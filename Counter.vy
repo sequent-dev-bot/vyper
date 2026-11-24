@@ -1,5 +1,4 @@
-# pragma version ^0.4.0
-"""A counter anyone can add to."""
+# pragma version 0.4.3
 
 count: public(uint256)
 
@@ -10,5 +9,5 @@ def add(amount: uint256):
 
 
 @external
-def reset_to(value: uint256):
-    self.count = value
+def reset_to(new_count: uint256):
+    self.count = new_count
