@@ -1,4 +1,5 @@
 # pragma version 0.4.3
+# Counter used by the API walk.
 
 count: public(uint256)
 
