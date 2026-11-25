@@ -5,7 +5,8 @@ count: public(uint256)
 
 @external
 def add(amount: uint256):
-    self.count += amount
+    new_count: uint256 = self.count + amount
+    self.count = new_count
 
 
 @external
