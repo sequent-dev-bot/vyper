@@ -152,7 +152,7 @@ event SetNewMATime:
 MAX_COINS: constant(uint256) = 8  # max coins is 8 in the factory
 MAX_COINS_128: constant(int128) = 8
 
-# ----------------------------- Pool variables -------------------------------
+# ---------------------------- Pool Variables --------------------------------
 
 N_COINS: public(immutable(uint256))
 N_COINS_128: immutable(int128)
@@ -164,7 +164,7 @@ asset_types: immutable(DynArray[uint8, MAX_COINS])
 pool_contains_rebasing_tokens: immutable(bool)
 stored_balances: DynArray[uint256, MAX_COINS]
 
-# Fee-specific variables
+# Fee specific vars
 FEE_DENOMINATOR: constant(uint256) = 10 ** 10
 fee: public(uint256)  # fee * 1e10
 offpeg_fee_multiplier: public(uint256)  # * 1e10
