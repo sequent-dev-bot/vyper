@@ -164,7 +164,7 @@ asset_types: immutable(DynArray[uint8, MAX_COINS])
 pool_contains_rebasing_tokens: immutable(bool)
 stored_balances: DynArray[uint256, MAX_COINS]
 
-# Fee specific vars
+# Fee-specific variables
 FEE_DENOMINATOR: constant(uint256) = 10 ** 10
 fee: public(uint256)  # fee * 1e10
 offpeg_fee_multiplier: public(uint256)  # * 1e10
