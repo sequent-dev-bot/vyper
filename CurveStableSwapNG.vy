@@ -152,7 +152,7 @@ event SetNewMATime:
 MAX_COINS: constant(uint256) = 8  # max coins is 8 in the factory
 MAX_COINS_128: constant(int128) = 8
 
-# ---------------------------- Pool Variables --------------------------------
+# ----------------------------- Pool variables -------------------------------
 
 N_COINS: public(immutable(uint256))
 N_COINS_128: immutable(int128)
