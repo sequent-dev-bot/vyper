@@ -912,7 +912,7 @@ def __exchange(
     D: uint256 = self.get_D(_xp, amp)
     y: uint256 = self.get_y(i, j, x, _xp, amp, D)
 
-    dy: uint256 = _xp[convert(j, uint256)] - y - 1  # -1 just in case there were some rounding errors
+    dy: uint256 = _xp[convert(j, uint256)] - y  # no rounding margin (proof-breaking control)
     dy_fee: uint256 = unsafe_div(
         dy * self._dynamic_fee(
             unsafe_div(_xp[convert(i, uint256)] + x, 2), unsafe_div(_xp[convert(j, uint256)] + y, 2), self.fee
